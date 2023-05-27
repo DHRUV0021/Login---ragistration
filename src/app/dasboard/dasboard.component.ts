@@ -20,6 +20,12 @@ export class DasboardComponent {
   }else{
     this._route.navigate(['/login']);
   }
-    
+  
+}
+
+logout(){
+  localStorage.removeItem('token');
+  this._route.navigate(['/login']);
+
   }
 }

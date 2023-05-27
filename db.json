@@ -1,7 +1,20 @@
 {
   "register": [
-  {
-    
-  }
+    {
+      "id": 1,
+      "name": "aaa",
+      "password": "aaa",
+      "role": "define",
+      "token": "Kmyq64FwsGSf",
+      "isActive": "true"
+    },
+    {
+      "id": 2,
+      "name": "Dhruv",
+      "password": "Dhruv",
+      "role": "define",
+      "token": "nOo8vQfkYeNW",
+      "isActive": "true"
+    }
   ]
 }

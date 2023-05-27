@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -17,24 +16,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { DasboardComponent } from './dasboard/dasboard.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTableModule} from '@angular/material/table';
-import { SliderComponent } from './slider/slider.component';
-import { HeaderComponent } from './header/header.component';
-import { StockComponent } from './stock/stock.component';
-import { ProductComponent } from './product/product.component';
 import {MatListModule} from '@angular/material/list';
-import { SmallSliderComponent } from './small-slider/small-slider.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RagisterComponent,
-    DasboardComponent,
-    SliderComponent,
-    HeaderComponent,
-    StockComponent,
-    ProductComponent,
-    SmallSliderComponent,
-    
+    DasboardComponent
   ],
   imports: [
     BrowserModule,
