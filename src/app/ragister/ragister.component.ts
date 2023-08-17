@@ -27,9 +27,7 @@ export class RagisterComponent {
     }else{
       this._route.navigate(['/ragister']);
     }
-
   }
-
 
   ReactiveForm() {
     this.spToken = this.makeid(12);
@@ -56,7 +54,6 @@ export class RagisterComponent {
     }
     return result;
   }
-
 
   addData() {
     this.Crud.addItem(this.myForm.value).subscribe({

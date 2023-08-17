@@ -10,7 +10,6 @@ import { Router } from '@angular/router';
 export class DasboardComponent {
 
   token = localStorage.getItem('token');
-
   
   constructor(private _route:Router){}
   
@@ -20,12 +19,10 @@ export class DasboardComponent {
   }else{
     this._route.navigate(['/login']);
   }
-  
 }
 
 logout(){
   localStorage.removeItem('token');
   this._route.navigate(['/login']);
-
   }
 }

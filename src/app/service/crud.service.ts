@@ -6,10 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class CrudService {
 
-
   jsonUrl = "  http://localhost:3000/register";
   constructor(private _http:HttpClient) { }
-
 
   getItem(){
      return  this._http.get<Array<Data>>(this.jsonUrl);

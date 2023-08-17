@@ -5,14 +5,14 @@
         <mat-card-header>
           <mat-card-title>Login Form</mat-card-title>
         </mat-card-header>
-        <mat-card-content   [formGroup]="loginForm">
+        <mat-card-content [formGroup]="loginForm">
           <mat-form-field style="width:100%; margin-top:30px;">
             <mat-label>Enter Name</mat-label>
             <input matInput formControlName="name">
           </mat-form-field>
           <mat-form-field style="width:100%">
             <mat-label>Enter your password</mat-label>
-            <input matInput [type]="hide ? 'password' : 'text'"  formControlName="password">
+            <input matInput [type]="hide ? 'password' : 'text'" formControlName="password">
             <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'"
               [attr.aria-pressed]="hide">
               <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
@@ -24,7 +24,6 @@
           <button mat-button class="mx-auto" routerLink="/ragister">Register</button>
         </mat-card-actions>
       </mat-card>
-
     </div>
   </div>
 </div>

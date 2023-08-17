@@ -11,9 +11,7 @@ import { Token } from '@angular/compiler';
 })
 export class LoginComponent {
   hide = true;
-
   loginForm: FormGroup;
-  
   allDatas: Array<Data> = new Array<Data>();
   token = localStorage.getItem('token');
 
@@ -28,9 +26,7 @@ export class LoginComponent {
     }else{
       this._route.navigate(['/login']);
     }
-     
   }
-
 
   loginFormDetails(){
     this.loginForm = new FormGroup({
@@ -60,7 +56,6 @@ export class LoginComponent {
     let Name = this.loginForm.value.name;
     let Password = this.loginForm.value.password;
 
- 
    this.allDatas.filter((x)=>{
     if(x.name == Name && x.password == Password){
       localStorage.setItem('token',x.token);
