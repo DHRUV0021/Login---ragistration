@@ -10,6 +10,7 @@ import { Token } from '@angular/compiler';
   styleUrls: ['./ragister.component.scss']
 })
 export class RagisterComponent {
+  
   hide = true;
   task?: Data;
   myForm: FormGroup;
