@@ -10,6 +10,7 @@ import { Token } from '@angular/compiler';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  
   hide = true;
   loginForm: FormGroup;
   allDatas: Array<Data> = new Array<Data>();
